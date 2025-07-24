@@ -1,9 +1,8 @@
+#include "A.h"
 #include <iostream>
 using namespace std;
 
 void Array(int arr[],int size){
-    cout << "请输入数组大小：";
-    cin >> size;
     for(int i=0; i<size;i++)
     {
         cout << "请输入第" << i+1 << "个元素：";
@@ -11,9 +10,10 @@ void Array(int arr[],int size){
     }
 }
 
-int main() {
-    int A;
-    int arr[A];
-    cout << "------第一个数组函数------" << endl;
-    Array(arr, A);
+void outPutArray(int arr[], int size) {
+    cout << "数组元素为：";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
